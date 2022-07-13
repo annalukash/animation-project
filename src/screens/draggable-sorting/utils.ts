@@ -25,6 +25,7 @@ export const getPosition = (order: number) => {
 
 export const getOrder = (x: number, y: number) => {
   'worklet';
+  console.log('');
   const col = Math.round(x / SIZE);
   const row = Math.round(y / SIZE);
   return row * COL + col;
