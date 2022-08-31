@@ -32,7 +32,7 @@ const Home = (props: Props) => {
     <View style={Styles.container}>
       <View style={Styles.inner}>
         {routeList.map((routeItem: IRoute) => (
-          <View key={routeItem.name} style={{width: '48%'}}>
+          <View key={routeItem.name} style={{width: '48%', marginVertical: 6 }}>
             <Button title={routeItem.name} onPress={() => onNavigate(routeItem.name)} />
           </View>
         ))}

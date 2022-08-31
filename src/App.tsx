@@ -6,11 +6,13 @@ import Screens from './interfaces/enums/Screens';
 import Home from './screens/home';
 import CircleSnake from './screens/circle-snake';
 import DraggableSorting from './screens/draggable-sorting/draggable-sorting';
+import ImageZoom from './screens/image-zoom/image-zoom';
 
 export type RootStackParamList = {
   Home: undefined;
   CircleSnake: undefined;
   DraggableSorting: undefined;
+  ImageZoom: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -23,6 +25,7 @@ export interface IRoute {
 export const routeList: IRoute[] = [
   { name: Screens.CircleSnake, component: CircleSnake },
   { name: Screens.DraggableSorting, component: DraggableSorting },
+  { name: Screens.ImageZoom, component: ImageZoom },
 ];
 
 const App = () => {
